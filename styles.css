@@ -11,8 +11,8 @@ nav {
 }
 
 #logo img {
-  width: 64px;
-  aspect-ratio: 1;
+  width: 50%;
+aspect-ratio: 1;
 }
 
 #call-to-action {
@@ -21,6 +21,8 @@ nav {
   text-decoration: none;
   padding: 14px 45px;
   border-radius: 1000px;
+  font-size: 1rem;
+
 }
 
 .text-content {
@@ -28,7 +30,7 @@ nav {
 }
 
 h1 {
-  font-size: 56px;
+  font-size: 3rem;
   margin-block-end: 22px;
 }
 
@@ -39,52 +41,64 @@ h1 {
 
 .card-content h2 {
   margin: 0;
-  font-size: 18px;
+  font-size: 1rem;
 
 }
 
 .card-container {
-  display: flex;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
   flex-direction: row; 
   justify-content: center; 
   gap: 24px; 
   padding: 20px; /
 }
 
-.card.graphic-design {
+.card img{
+  display: block;
+  max-width: 100%;
+}
+
+.card-content{
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  border-radius: 16px;
+  padding: 20px;
+}
+
+.graphic-design {
   background-color: #725AC1;
   color: #FFF7F0;
-  background-position: center;
-  width: 250px; 
-  display: flex;
-  align-items: center;
-  border-radius: 16px;
-  padding: 20px;
-  text-align: left;
+}
+.graphic-design img{
+  width: 128px;
+  height: 192px;
+  align-self: flex-end;
 }
 
-.card.illustrations {
+.illustrations {
   background-color: #EA7659;
-  background-position: center;
-  width: 250px; 
-  display: flex;
-  align-items: center;
-  border-radius: 16px;
-  padding: 20px;
-  text-align: left;
+color: white;
 
 }
+.illustrations-design img{
+  width: 230px;
+  height: 115px;
+}
 
-.card.photography {
+.photography {
   background-color: #5DBAB7;
-  background-position: center;
-  width: 250px; 
-  display: flex;
-  align-items: center;
-  border-radius: 16px;
-  padding: 20px;
-  text-align: left;
+color: white;
+align-self: flex-end;
 }
+.photography img{
+  width: 86px;
+  height: 216px;
+  align-self: flex-end;
+}
+
 
 
 .about-image img {
@@ -100,13 +114,13 @@ h1 {
 }
 
 .about-text h2 {
-  font-size: 32px;
+  font-size: 2rem;
   margin-bottom: 20px;
 }
 
 .about-text p {
   color: #7A746E;
-  font-size: 18px;
+  font-size: 1.5rem;
   line-height: 1.6;
   margin-bottom: 20px;
 }
