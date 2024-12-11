@@ -43,11 +43,15 @@ aspect-ratio: 1;
   padding: 14px 45px;
   border-radius: 1000px;
   font-size: 1rem;
+  cursor: pointer;
 
+  transition-property: background-color;
+  transition-duration: 0.5s;
 }
 
 #call-to-action:hover{
   background-color: var(--clr-violet);
+  font-weight: bold;
 }
 
 .text-content {
@@ -171,9 +175,9 @@ align-self: flex-end;
   margin-bottom: 20px;
 }
 
-.cta:hover{
+/* .cta:hover{
   background-color: var(--clr-orange);
-}
+} */
 
 
 
@@ -275,10 +279,14 @@ align-self: flex-end;
   text-transform: capitalize;
   display: block;
   width: fit-content;
+  cursor: pointer;
+  transition-property: background-color;
+  transition-duration: 0.5s;
 }
 
 .button:hover{
   background-color: var(--clr-orange);
+  font-weight: bold;
 }
 
 
